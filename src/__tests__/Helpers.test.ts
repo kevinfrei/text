@@ -1,10 +1,11 @@
-import { NormalizeText, StripInitialArticles } from '../Cleaners';
 import {
+  NormalizeText,
+  StripInitialArticles,
   NoArticlesNormalizedStringCompare,
   NoArticlesStringCompare,
   NormalizedStringCompare,
   StringCompare,
-} from '../Comparers';
+} from '../index';
 
 test('Text Helpers', () => {
   expect(StripInitialArticles('The rain')).toEqual('rain');

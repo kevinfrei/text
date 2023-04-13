@@ -5,7 +5,7 @@ import {
   ToB64,
   ToPathSafeName,
   ToU8,
-} from '../Codec';
+} from '../index';
 
 test('Simplistic name encoding', () => {
   expect(ToPathSafeName('TEST')).toBe('TEST');
